@@ -10,9 +10,9 @@ import GetLocation from "../app/hooks/getLocation";
 
 export default function MapWindow(){
     return(
-        <div className="flex h-full w-full justify-center items-center">
+        <div className="flex inset-0 z-0 justify-center items-center">
             <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}
-                style={{ top: 100, height: 500, width: 500}}>
+                style={{ top: 100, height: 500, width: 500, borderRadius: 10,}}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
